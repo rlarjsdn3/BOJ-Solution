@@ -20,4 +20,5 @@ int solution(int left, int right) {
 
 int main(void) {
     cout << solution(13, 17) << endl;
+    return 0;
 }
