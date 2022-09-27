@@ -17,8 +17,6 @@ std::vector<std::string> split(std::string str, char delimeter) {
 
 int main(void) {
     std::vector<std::string> vector;
-    std::string str = "a b c";
-
     std::getline(std::cin, str);
     vector = split(str, ' ');
     std::cout << vector.size() << std::endl;
