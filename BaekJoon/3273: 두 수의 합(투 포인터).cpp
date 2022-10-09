@@ -18,15 +18,13 @@ int main(void)
     std::sort(data, data+n);
 
     end = n-1;
-    while(start<end) {
+    for(int start=0; start<n && start<end; start++) {
         pair_sum = data[start] + data[end];
-        if(pair_sum < x)
-            start += 1;
-        if(pair_sum > x)
-            end -= 1;
-        if(pair_sum == x) {
+        while(pair_sum>x)
+            pair_sum = data[start] + data[--end];
+            
+        if(pair_sum==x) {
             count += 1;
-            start += 1;
             end -= 1;
         }
     }
