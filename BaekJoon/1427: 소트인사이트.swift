@@ -1,8 +1,7 @@
 import Foundation
 
-var n: String = Array(readLine()!).sorted(by: >).reduce("") {
-    (result: String, element: Character) -> String in
-    return result + String(element)
-}
+var n: String = Array(readLine()!)
+                    .sorted(by: >)
+                    .reduce("") { $0 + String($1) }
 
 print(n)
