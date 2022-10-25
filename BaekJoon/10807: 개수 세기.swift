@@ -7,8 +7,8 @@ let m: [Int] = readLine()!.components(separatedBy: " ").map {
 let v: Int = Int(readLine()!)!
 
 var count: Int = 0
-for x in m {
-    if x == v {
+m.forEach {
+    if $0 == v {
         count += 1
     }
 }
