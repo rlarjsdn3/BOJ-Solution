@@ -42,7 +42,6 @@ func isPrime(_ number: Int) -> Bool {
 }
 
 func solution(_ numbers:String) -> Int {
-    var count: Int = 0
     var permu: [Int] = []
     var prime: [Int] = []
     
@@ -50,13 +49,12 @@ func solution(_ numbers:String) -> Int {
         permu = permutation(numbers, targetNum: i)
         for n in permu {
             if isPrime(n) && !prime.contains(n) {
-                count += 1
                 prime.append(n)
             }
         }
     }
     
-    return count
+    return prime.count
 }
 
 print(solution("011"))
