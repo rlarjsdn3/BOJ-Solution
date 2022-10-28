@@ -1,25 +1,26 @@
 import Foundation
 
-var input: [String] = Array(readLine()!.uppercased()).map { String($0) }
-var count: [Int] = [Int](repeating: 0, count: 26)
+let input: [String] = Array(readLine()!).map { String($0.uppercased()) }
+var countOfAlphabet: [Int] = [Int](repeating: 0, count: 26)
 
-for c in input {
-    count[Int(Unicode.Scalar(c)!.value)-65] += 1
+var maxValue: Int = 0
+var maxIndex: Int = 0
+var isRepeated: Bool = false
+
+for s in input {
+    countOfAlphabet[Int(UnicodeScalar(s)!.value)-65] += 1
 }
 
-var maxIndex: Int = 0
-var maxValue: Int = 0
-var repeated: Bool = false
-for (n, x) in count.enumerated() {
-    if maxValue != x {
+for (n, x) in countOfAlphabet.enumerated() {
+    if maxValue == x {
+        isRepeated = true
+    } else {
         if maxValue < x {
             maxValue = x
             maxIndex = n
-            repeated = false
+            isRepeated = false
         }
-    } else {
-        repeated = true
     }
 }
 
-print(repeated ? "?" : String(Unicode.Scalar(65+maxIndex)!))
+print(isRepeated ? "?" : UnicodeScalar(maxIndex+65)!.description)
