@@ -9,13 +9,13 @@ for _ in stride(from: 0, to: n, by: 1) {
     let word: String = readLine()!
     
     isGroupWord = true
-    visited = [Bool](repeating: false, count: 27)
+    visited = [Bool](repeating: false, count: 26)
     
-    visited[Int(word[word.startIndex].asciiValue!)-97+1] = true
+    visited[Int(word[word.startIndex].asciiValue!)-97] = true
     for i in 1..<word.count {
         let currChar = word[word.index(word.startIndex, offsetBy: i)]
         let prevChar = word[word.index(word.startIndex, offsetBy: i-1)]
-        let IdxCurrChar = Int(currChar.asciiValue!)-97+1
+        let IdxCurrChar = Int(currChar.asciiValue!)-97
         
         if prevChar != currChar  && visited[IdxCurrChar] {
             isGroupWord = false
