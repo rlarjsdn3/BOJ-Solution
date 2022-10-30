@@ -7,7 +7,7 @@ for _ in 0..<5 {
 
 input.sort()
 var median: Int = input[2]
-var average: Int = input.reduce(0) { return $0 + $1 } / input.count
+var average: Int = input.reduce(0) { return $0 + $1 } / 5
 
 print(average)
 print(median)
