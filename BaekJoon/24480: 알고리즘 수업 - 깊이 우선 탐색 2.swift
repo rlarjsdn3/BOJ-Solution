@@ -40,19 +40,4 @@ for i in 1..<visited.count {
     print(visited[i])
 }
 
-// input:
-// 5 5 1
-// 1 4
-// 1 2
-// 2 3
-// 2 4
-// 3 4
-
-// output:
-// 1
-// 4
-// 3
-// 2
-// 0
-
 // 출처: www.acmicpc.net/problem/24480
