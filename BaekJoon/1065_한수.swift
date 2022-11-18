@@ -25,5 +25,4 @@ for n in 1...input {
         count += 1
     }
 }
-
 print(count)
