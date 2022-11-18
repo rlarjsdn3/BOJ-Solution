@@ -12,5 +12,4 @@ m.forEach {
         count += 1
     }
 }
-
 print(count)
