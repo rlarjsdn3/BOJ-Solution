@@ -1,7 +1,3 @@
-//
-//  Created by 김건우 on 2022/10/11.
-//
-
 import Foundation
 
 let n: Int = Int(readLine()!)!
