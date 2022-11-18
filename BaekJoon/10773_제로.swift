@@ -24,5 +24,4 @@ for _ in 0..<n {
         _ = stack.pop()
     }
 }
-
 print(stack.sum())
