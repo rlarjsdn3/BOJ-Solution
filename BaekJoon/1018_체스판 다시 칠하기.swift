@@ -28,7 +28,7 @@ for x in 0..<(n-7) {
                         wCount += 1
                     }
                 } else {
-                    // 시작점의 색깔과 달라야 하는 경우 (시작점이 'W'라 가정)
+                    // 시작점의 색깔과 달라야 하는 경우
                     if chessBoard[x+i][y+j] == "B" {
                         bCount += 1
                     } else {
@@ -41,5 +41,4 @@ for x in 0..<(n-7) {
         result = min(result, min(bCount, wCount))
     }
 }
-
 print(result)
