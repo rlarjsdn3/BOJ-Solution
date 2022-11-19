@@ -31,5 +31,4 @@ for _ in stride(from: 0, to: n, by: 1) {
         count += 1
     }
 }
-
 print(count)
