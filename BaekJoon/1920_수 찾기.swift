@@ -32,6 +32,4 @@ for x in input2 {
     }
 }
 
-result.forEach {
-    print($0)
-}
+result.forEach { print($0) }
