@@ -39,5 +39,3 @@ dfs(graph, v: r, visited: &visited)
 for i in 1..<visited.count {
     print(visited[i])
 }
-
-// 출처: www.acmicpc.net/problem/24480
