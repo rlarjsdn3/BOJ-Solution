@@ -28,5 +28,4 @@ while start <= end {
         end = mid - 1
     }
 }
-
 print(result - 1)
