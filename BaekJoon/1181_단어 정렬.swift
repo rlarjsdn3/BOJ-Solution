@@ -15,6 +15,4 @@ wArray = Array(wSet).sorted { (s1, s2) in
     }
 }
 
-wArray.forEach {
-    print($0)
-}
+wArray.forEach { print($0) }
