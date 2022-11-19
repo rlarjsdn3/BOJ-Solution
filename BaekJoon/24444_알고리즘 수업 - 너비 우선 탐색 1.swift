@@ -75,7 +75,7 @@ for _ in 0..<m {
     graph[u].append(v)
     graph[v].append(u)
 }
-for i in 0..<n {
+for i in 0..<(n+1) {
     graph[i].sort()
 }
 
