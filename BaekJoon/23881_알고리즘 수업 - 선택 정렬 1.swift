@@ -1,7 +1,3 @@
-//
-//  Created by 김건우 on 2022/11/15.
-//
-
 import Foundation
 
 func selectionSort(_ array: inout [Int], count: Int) -> (Int, Int)? {
