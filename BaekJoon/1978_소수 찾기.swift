@@ -1,7 +1,3 @@
-//
-//  Created by 김건우 on 2022/11/13.
-//
-
 import Foundation
 
 func eratos(_ n: Int) -> [Int] {
