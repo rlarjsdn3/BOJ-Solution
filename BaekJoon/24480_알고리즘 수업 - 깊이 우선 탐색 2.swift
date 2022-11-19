@@ -1,7 +1,3 @@
-//
-// Created by 김건우 on 2022/11/18.
-//
-
 import Foundation
 
 var count: Int = 1
