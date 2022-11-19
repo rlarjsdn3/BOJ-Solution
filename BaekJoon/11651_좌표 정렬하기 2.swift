@@ -15,6 +15,4 @@ point.sort { (p1, p2) in
     }
 }
 
-point.forEach {
-    print("\($0.x) \($0.y)")
-}
+point.forEach { print("\($0.x) \($0.y)") }
