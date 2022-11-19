@@ -16,6 +16,4 @@ while true {
     }
 }
             
-result.forEach {
-    print($0)
-}
+result.forEach { print($0) }
