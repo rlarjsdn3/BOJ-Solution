@@ -19,5 +19,3 @@ int main(void) {
 
     return 0;
 }
-
-// vector 클래스 사용법 학습을 위한 코드입니다.
