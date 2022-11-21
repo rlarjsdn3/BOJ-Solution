@@ -10,11 +10,11 @@ for _ in 0..<k {
 lanCable.sort()
 
 var start: Int = 1
-var end: Int = lanCable[lanCable.count-1]
+var end: Int = lanCable[k - 1]
 
 var result: Int = 0
 while start <= end {
-    let mid: Int = (start+end) / 2
+    let mid: Int = (start + end) / 2
     
     var count: Int = 0
     for i in lanCable {
