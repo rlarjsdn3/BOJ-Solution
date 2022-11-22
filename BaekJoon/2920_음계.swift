@@ -12,5 +12,4 @@ for i in 1..<n.count {
         isDescending = true
     }
 }
-
 print((isAscending && isDescending) ? "mixed" : (isAscending ? "ascending" : "descending"))
