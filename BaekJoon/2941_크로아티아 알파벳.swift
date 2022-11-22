@@ -46,5 +46,4 @@ while i < s.count {
         count += 1
     }
 }
-
 print(count)
