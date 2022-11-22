@@ -1,3 +1,5 @@
+import Foundation
+
 struct Stack<Element> {
     // 요소를 저장할 배열
     private var items: [Element] = []
