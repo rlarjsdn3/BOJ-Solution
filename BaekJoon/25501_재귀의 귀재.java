@@ -11,9 +11,11 @@ public class main{
             return recursion(s, l+1, r-1); 
         }
     }
+    
     public static int isPalindrome(String s){
         return recursion(s, 0, s.length()-1);
     }
+    
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         
