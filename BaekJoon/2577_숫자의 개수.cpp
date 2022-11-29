@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 
-
 int main(void)
 {
     int a, b, c;
