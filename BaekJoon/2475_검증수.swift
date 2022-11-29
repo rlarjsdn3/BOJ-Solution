@@ -6,5 +6,4 @@ var sum: Int = 0
 for x in n {
     sum += Int(pow(Double(x), 2.0))
 }
-
 print(sum % 10)
