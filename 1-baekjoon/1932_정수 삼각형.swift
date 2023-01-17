@@ -12,18 +12,19 @@ for _ in 0..<n {
 // 다이내믹 프로그래밍 수행(바텀업)
 for i in 1..<n {
     for j in 0..<triangle[i].count {
-        var left: Int = 0
-        var right: Int = 0
+        var left, right: Int
         
-        // 가장 왼쪽 수인 경우
+        // 오른쪽에서 내려오는 경우
         if j == 0 {
-            right = triangle[i - 1][0]
-        // 가장 오른쪽 수인 경우
-        } else if j == triangle[i].count - 1 {
-            left = triangle[i - 1][triangle[i - 1].count - 1]
-        // 가운데 수인 경우
+            left = 0
         } else {
             left = triangle[i - 1][j - 1]
+        }
+        
+        // 왼쪽에서 내려오는 경우
+        if j == i {
+            right = 0
+        } else {
             right = triangle[i - 1][j]
         }
         
