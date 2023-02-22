@@ -1,0 +1,10 @@
+import Foundation
+
+// 바이트 수 N 입력 받기
+let n = Int(readLine()!)!
+
+var long = "int"
+for _ in 0..<(n/4) {
+    long = "long " + long
+}
+print(long) // 결과값 출력하기
